@@ -51,3 +51,15 @@ void drawShapes(void)
 
     glFlush();
 }
+int main(int argc, char* argv[])
+{
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
+    glutInitWindowPosition(100, 100);
+    glutInitWindowSize(500, 500);
+    glutCreateWindow("Question 3");
+    init();
+    glutDisplayFunc(drawShapes);
+    glutMainLoop();
+    return 0;
+}
